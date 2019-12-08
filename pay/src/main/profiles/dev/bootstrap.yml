@@ -1,0 +1,22 @@
+server:
+  port: 9002
+
+spring:
+  application:
+    name: pay
+  datasource:
+    type: com.mysql.cj.jdbc.MysqlDataSource
+    url: jdbc:mysql://127.0.0.1:3306/user?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true
+    username: root
+    password: panenming1990
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848,127.0.0.1:8849,127.0.0.1:8850
+        group: dev
+      discovery:
+        server-addr: 127.0.0.1:8848,127.0.0.1:8849,127.0.0.1:8850
+        group: dev
+feign:
+  sentinel:
+    enabled: true

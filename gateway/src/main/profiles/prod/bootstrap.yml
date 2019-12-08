@@ -1,0 +1,35 @@
+server:
+  port: 9001
+# nacos 配置信息
+nacos:
+  server-addr: 127.0.0.1:8848,127.0.0.1:8849,127.0.0.1:8850
+  group: prod
+spring:
+  application:
+    name: gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${nacos.server-addr}
+        group: ${nacos.group}
+      config:
+        server-addr: ${nacos.server-addr}
+        group: ${nacos.group}
+    gateway:
+      enabled: true
+      discovery:
+        locator:
+          lower-case-service-id: true
+    sentinel:
+      datasource:
+        ds:
+          nacos:
+            server-addr: ${nacos.server-addr}
+            groupId: ${nacos.group}
+            dataId: gateway_sentinel.json
+            rule-type: flow
+
+gateway:
+  data-id: gateway_dynamic_route.json
+  group: ${nacos.group}
+  server-addr: ${nacos.server-addr}
