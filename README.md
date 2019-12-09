@@ -83,6 +83,7 @@ java -jar xx.jar
 *clusterMode：是否集群模式*
 
 ## 问题总结
+
 *1. 显示jar包未引入的webflux，idea直接删除应用后重新倒入*
 
 *2. nacos本机集群配置时一定要配置局域网ip*
