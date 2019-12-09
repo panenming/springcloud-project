@@ -7,6 +7,25 @@
  
 *[xxl-job](https://www.xuxueli.com/xxl-job/#%E4%BA%8C%E3%80%81%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8)*
 
+## 中间件版本依赖
+*Mysql： 版本 5.7.28       8.0+版本会有很多jar和管理工具存在问题*
+
+*redis： 3.0+*
+
+*nacos： 1.1.4*
+
+*xxl-job： 2.1.1*
+
+*redssion：3.11.6* 
+
+## 工程打包
+*进入各工程下比如user : cd user*
+
+*mvn clean -U package -P dev  -Dmaven.test.skip=true*
+
+## 工程部署运行
+java -jar xx.jar
+
 ## 网关配置
 
 *(1)动态路由：*
@@ -60,25 +79,6 @@
 *controlBehavior：流量控制效果(直接拒绝、WarmUP、匀速排队)*
 
 *clusterMode：是否集群模式*
-
-## 中间件版本依赖
-*Mysql： 版本 5.7.28       8.0+版本会有很多jar和管理工具存在问题*
-
-*redis： 3.0+*
-
-*nacos： 1.1.4*
-
-*xxl-job： 2.1.1*
-
-*redssion：3.11.6* 
-
-## 工程打包
-*进入各工程下比如user : cd user*
-
-*mvn clean -U package -P dev  -Dmaven.test.skip=true*
-
-## 工程部署运行
-java -jar xx.jar
 
 ## 问题总结
 *1. 显示jar包未引入的webflux，idea直接删除应用后重新倒入*
