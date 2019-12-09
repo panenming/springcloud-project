@@ -19,9 +19,11 @@
 *redssion：3.11.6* 
 
 ## 工程打包
-*进入各工程下比如user : cd user*
 
-*mvn clean -U package -P dev  -Dmaven.test.skip=true*
+*进入各工程下,比如user*
+
+    cd user
+    mvn clean -U package -P dev  -Dmaven.test.skip=true
 
 ## 工程部署运行
 java -jar xx.jar
