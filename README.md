@@ -1,13 +1,17 @@
 ## 架构图
+
 *架构图见 paltform.png*
 
 ![platform](https://github.com/panenming/springcloud-project/blob/master/platform.png "platform")
+
 ## 各模块部署
+
 *[nacos](https://nacos.io/zh-cn/docs/deployment.html)*
  
 *[xxl-job](https://www.xuxueli.com/xxl-job/#%E4%BA%8C%E3%80%81%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8)*
 
 ## 中间件版本依赖
+
 *Mysql： 版本 5.7.28       8.0+版本会有很多jar和管理工具存在问题*
 
 *redis： 3.0+*
@@ -26,6 +30,7 @@
     mvn clean -U package -P dev  -Dmaven.test.skip=true
 
 ## 工程部署运行
+
 java -jar xx.jar
 
 ## 网关配置
