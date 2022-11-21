@@ -23,7 +23,7 @@
         <alibaba-cloud.version>2.1.1.RELEASE</alibaba-cloud.version>
         <mybatis-plus.version>3.2.0</mybatis-plus.version>
         <swagger2.version>2.7.0</swagger2.version>
-        <xxl-job.version>2.1.1</xxl-job.version>
+        <xxl-job.version>2.3.1</xxl-job.version>
         <redisson.version>3.11.6</redisson.version>
     </properties>
 
